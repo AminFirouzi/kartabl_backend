@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Kartabl_Backend.Application/Kartabl_Backend.Application.csproj" />
+    <Project Path="src/Kartabl_Backend.Domain/Kartabl_Backend.Domain.csproj" />
+    <Project Path="src/Kartabl_Backend.Infrastructure/Kartabl_Backend.Infrastructure.csproj" />
+    <Project Path="src/Kartabl_Backend.Presentation/Kartabl_Backend.Presentation.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,6 @@
+@Kartabl_Backend.Presentation_HostAddress = http://localhost:5151
+
+GET {{Kartabl_Backend.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
