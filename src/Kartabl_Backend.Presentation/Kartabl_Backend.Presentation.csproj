@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Kartabl_Backend.Infrastructure\Kartabl_Backend.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
