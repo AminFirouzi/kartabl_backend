@@ -5,14 +5,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Behaviors\" />
-    <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Models\" />
-    <Folder Include="Modules\Auth\Commands\" />
-    <Folder Include="Modules\Auth\DTOs\" />
+    <Folder Include="Modules\Authentication\DTOs\" />
     <Folder Include="Modules\Users\Commands\" />
     <Folder Include="Modules\Users\DTOs\" />
     <Folder Include="Modules\Users\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" Version="10.1.0" />
+    <PackageReference Include="Ardalis.Result.FluentValidation" Version="10.1.0" />
+    <PackageReference Include="MediatR" Version="14.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
   </ItemGroup>
 
   <PropertyGroup>
