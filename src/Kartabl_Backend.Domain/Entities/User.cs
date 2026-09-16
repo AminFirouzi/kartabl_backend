@@ -1,3 +1,5 @@
+using Kartabl_Backend.Domain.Enums;
+
 namespace Kartabl_Backend.Domain.Entities;
 
 public class User
@@ -11,12 +13,11 @@ public class User
     public bool IsActive { get; private set; }
     public bool IsDeleted { get; private set; }
     public DateTime CreatedAt { get; private set; }
-    public int RoleId { get; private set; }
-    
+    public UserRole RoleId { get; private set; }
     
     // navigation properties
+    public Role Role { get; private set; } = null!;
     public ICollection<RefreshToken> RefreshTokens { get; private set; } = new List<RefreshToken>();
-    public Role Role { get; private set; }
     
     public User(){}
     
@@ -26,16 +27,16 @@ public class User
         string firstName,
         string lastName,
         string passwordHash,
-        int roleId,
+        UserRole roleId,
         bool isActive = true,
-        bool isDeleted = false
-    )
+        bool isDeleted = false)
     {
-        return new User()
+        return new User
         {
-            PasswordHash = passwordHash,
+            NationalCode = nationalCode,
             FirstName = firstName,
             LastName = lastName,
+            PasswordHash = passwordHash,
             RoleId = roleId,
             IsActive = isActive,
             IsDeleted = isDeleted,
