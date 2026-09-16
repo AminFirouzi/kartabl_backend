@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Kartabl_Backend.Application\Kartabl_Backend.Application.csproj" />
     <ProjectReference Include="..\Kartabl_Backend.Infrastructure\Kartabl_Backend.Infrastructure.csproj" />
   </ItemGroup>
