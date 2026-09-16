@@ -65,6 +65,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthorization();
 
 // Authentication MUST be placed before Authorization
 app.UseAuthentication();
